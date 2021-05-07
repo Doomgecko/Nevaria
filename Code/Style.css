@@ -1,0 +1,105 @@
+HTML{
+    box-sizing: border-box;
+}
+
+*{
+    box-sizing:inherit;
+}
+
+#layout{
+    display: grid;
+    grid-template-rows: 50px 400px 100px;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-areas:
+    "links  navigation  guide"
+    "links  main        guide"
+    "footer footer      footer"
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+nav{grid-area:navigation;}
+
+    nav{
+        border-bottom: 1px solid;
+    }
+
+    nav ul{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li a{
+        display: block;
+        color: black;
+        background-color: bisque;
+        border: 1px solid;
+        padding: .5em 1em;
+        margin: .5em;
+        transition:
+                color 0.2s,
+                border-radius 0.2s;
+    }
+
+    nav ul li a:focus, nav ul li a:hover{
+        color: #7f1989;
+        border-radius: .25em;
+    }
+
+    nav ul li a:active{
+        color: #0101bf;
+        border-radius: .25em;
+    }
+
+main{grid-area: main;}
+
+    main h1{
+        justify-content: center;
+        display: flex;
+        font-family: "Times New Roman", serif;
+        margin: 0.5em;
+        padding: 0.5em;
+    }
+
+    main p{
+        align-content: center;
+        display: flex;
+        font-family: "Times New Roman", serif;
+        margin: 1em;
+        padding: 0.5em 1em 1em 1em;
+    }
+
+    main ul{
+        padding-bottom: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    main table{
+        justify-content: center;
+        display: flex;
+    }
+
+    main td{
+        border: 1px solid;
+    }
+
+    main p ul{
+        align-content: center;
+        display: flex;
+    }
+
+
+
+
+
+
+
+
+
