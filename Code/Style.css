@@ -26,7 +26,7 @@ nav{grid-area:navigation;}
         border-bottom: 1px solid;
     }
 
-    nav ul{
+    nav ul, directory ul{
         margin: 0;
         padding: 0;
         list-style-type: none;
@@ -34,7 +34,7 @@ nav{grid-area:navigation;}
         justify-content: center;
     }
 
-    nav ul li a{
+    nav ul li a, directory ul a{
         display: block;
         color: black;
         background-color: bisque;
@@ -46,12 +46,12 @@ nav{grid-area:navigation;}
                 border-radius 0.2s;
     }
 
-    nav ul li a:focus, nav ul li a:hover{
+    nav ul li a:focus, nav ul li a:hover, directory ul li a:focus, directory ul li a:hover{
         color: #7f1989;
         border-radius: .25em;
     }
 
-    nav ul li a:active{
+    nav ul li a:active, directory ul li a:active{
         color: #0101bf;
         border-radius: .25em;
     }
