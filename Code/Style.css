@@ -8,7 +8,7 @@ HTML{
 
 #layout{
     display: grid;
-    grid-template-rows: 100px 400px 100px;
+    grid-template-rows: 50px 400px 100px;
     grid-template-columns: 200px 1fr 200px;
     grid-template-areas:
     "links  navigation  guide"
