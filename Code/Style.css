@@ -34,16 +34,20 @@ nav{grid-area:navigation;}
         justify-content: center;
     }
 
-    nav ul li a, directory ul a{
+    nav ul li a, directory ul li a{
         display: block;
         color: black;
         background-color: bisque;
-        border: 1px solid;
+        border: 1px black solid;
         padding: .5em 1em;
         margin: .5em;
         transition:
                 color 0.2s,
                 border-radius 0.2s;
+    }
+
+    directory ul li a{
+        text-decoration: none;
     }
 
     nav ul li a:focus, nav ul li a:hover, directory ul li a:focus, directory ul li a:hover{
