@@ -9,7 +9,7 @@ HTML{
 #layout{
     display: grid;
     grid-template-rows: 50px 400px 100px;
-    grid-template-columns: 200px 1fr 200px;
+    grid-template-columns: 1fr 7fr 1fr;
     grid-template-areas:
     "links  navigation  guide"
     "links  main        guide"
@@ -44,6 +44,7 @@ nav{grid-area:navigation;}
         transition:
                 color 0.2s,
                 border-radius 0.2s;
+        text-decoration: none;
     }
 
 directory_events ul li a{
